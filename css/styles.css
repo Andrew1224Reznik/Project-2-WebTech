@@ -773,6 +773,7 @@ body {
   .workers-list {
     display: flex;
     gap: 5px;
+    width: 550px;
   }
 
   .workers-header-button {
@@ -784,10 +785,6 @@ body {
     overflow: hidden;
   }
 
-  .workers-list {
-    width: 450px;
-  }
-
   .workers-bar-img:hover .workers-bar {
     transform: translateY(0);
   }
@@ -795,7 +792,7 @@ body {
   .workers-bar {
     position: absolute;
     bottom: 0;
-    width: 147px;
+    width: 163px;
     height: 50px;
     background: #377dff;
     opacity: 0.9;
@@ -805,7 +802,7 @@ body {
 
   .workers-soc-list {
     display: flex;
-    gap: 6px;
+    gap: 8px;
     align-items: center;
     justify-content: center;
     height: 50px;
@@ -831,5 +828,50 @@ body {
     letter-spacing: 0.14em;
     color: #5c6f87;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .workers {
+    padding-top: 150px;
+    padding-bottom: 145px;
+    background: #f9fbfd;
+  }
+
+  .workers-header-button {
+    margin-right: 0px;
+  }
+
+  .workers-line {
+    height: 100px;
+  }
+
+  .workers-header {
+    margin-left: 0px;
+  }
+
+  .span-workers {
+    font-size: 40px;
+  }
+
+  .workers-title {
+    font-size: 40px;
+  }
+
+  .workers-list {
+    justify-content: end;
+    width: 920px;
+  }
+
+  .workers-bar {
+    width: 286px;
+  }
+
+  .workers-soc-list {
+    gap: 16px;
+  }
+
+  .workers-people {
+    font-size: 26px;
   }
 }
