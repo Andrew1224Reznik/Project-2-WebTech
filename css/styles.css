@@ -670,3 +670,27 @@ body {
     padding-left: 60px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 145px;
+    padding-bottom: 145px;
+  }
+
+  .features-list {
+    column-gap: 40px;
+    row-gap: 60px;
+  }
+
+  .features-item {
+    flex-basis: calc((100% - 80px) / 3);
+  }
+
+  .features-icon-title {
+    margin-bottom: 18px;
+  }
+
+  .t1 {
+    max-width: 320px;
+  }
+}
