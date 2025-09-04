@@ -763,3 +763,73 @@ body {
 .workers-list {
   display: none;
 }
+
+@media screen and (min-width: 768px) {
+  .workers-all {
+    display: flex;
+    align-items: center;
+  }
+
+  .workers-list {
+    display: flex;
+    gap: 5px;
+  }
+
+  .workers-header-button {
+    margin-right: 20px;
+  }
+
+  .workers-bar-img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .workers-list {
+    width: 450px;
+  }
+
+  .workers-bar-img:hover .workers-bar {
+    transform: translateY(0);
+  }
+
+  .workers-bar {
+    position: absolute;
+    bottom: 0;
+    width: 147px;
+    height: 50px;
+    background: #377dff;
+    opacity: 0.9;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .workers-soc-list {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  }
+
+  .workers-people {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 133%;
+    letter-spacing: 0.04em;
+    color: #141d28;
+    margin-bottom: 10px;
+    margin-top: 33px;
+    text-align: center;
+  }
+
+  .workers-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    letter-spacing: 0.14em;
+    color: #5c6f87;
+    text-align: center;
+  }
+}
