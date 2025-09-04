@@ -58,7 +58,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -210,5 +210,231 @@ body {
 
   .header-button {
     display: none;
+  }
+}
+
+/*-------Hero-------*/
+
+.hero {
+  position: relative;
+  background: linear-gradient(rgba(18, 27, 38, 0.73), rgba(18, 27, 38, 0.73)),
+    url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image {
+  display: none;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.number-title {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 129%;
+  color: rgba(255, 255, 255, 0.13);
+}
+
+.hero-line {
+  width: 3px;
+  height: 80px;
+  background: #377dff;
+}
+
+.hero-text-all {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 70px;
+  margin-left: 20px;
+}
+
+.hero-title {
+  font-family: var(--second-family);
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 140%;
+  color: #fff;
+  max-width: 480px;
+}
+
+.hero-title-2 {
+  font-family: var(--second-family);
+  font-weight: 200;
+  font-size: 25px;
+  color: #377dff;
+}
+
+.hero-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 156%;
+  color: #fff;
+  margin-top: 31px;
+  margin-bottom: 59px;
+  max-width: 611px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.hero-button-link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  border-radius: 35px;
+  padding: 17px 37px;
+  background: #377dff;
+  transition: all 500ms ease;
+}
+
+.hero-button-link:hover,
+.hero-button-link-2:hover {
+  transform: scale(1.1);
+}
+
+.hero-button-link-2:hover {
+  background-color: #377dff;
+}
+
+.hero-button-link-2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  border: 2px solid #377dff;
+  border-radius: 35px;
+  padding: 17px 37px;
+  background: transparent;
+  margin-left: 14px;
+  transition: all 500ms ease;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    position: relative;
+  }
+
+  .hero-text-all {
+    gap: 20px;
+    align-items: center;
+    margin-top: 90px;
+    margin-left: 20px;
+    width: 450px;
+  }
+
+  .number-title {
+    font-size: 100px;
+  }
+
+  .hero-line {
+    height: 100px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-title-2 {
+    font-size: 30px;
+  }
+
+  .hero-text {
+    font-size: 12px;
+    margin-top: 45px;
+    max-width: 450px;
+  }
+
+  .hero-buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    margin-bottom: 70px;
+    top: 130px;
+    right: 60px;
+  }
+
+  .hero-button-link-2 {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-width: 1440px;
+  }
+
+  .hero-text-all {
+    flex: 1 1 50%;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-top: 272px;
+    margin-left: 0;
+    width: 800px;
+  }
+
+  .number-title {
+    font-size: 140px;
+  }
+
+  .hero-line {
+    height: 130px;
+  }
+
+  .hero-title {
+    font-size: 50px;
+    max-width: 480px;
+  }
+
+  .hero-title-2 {
+    font-size: 50px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    margin-top: 31px;
+    margin-bottom: 59px;
+    max-width: 611px;
+  }
+
+  .hero-image {
+    position: absolute;
+    width: 825px;
+    margin-left: 465px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 1 45%;
+  }
+
+  .hero-buttons {
+    position: static; /* вместо absolute */ /* вместо flex */
+    flex-direction: row; /* дефолтное направление */ /* по умолчанию нет gap */
+    align-items: stretch; /* дефолтное значение */
+    margin-bottom: 0; /* сброс отступа */
+    top: auto; /* отключаем позиционирование */
+    right: auto; /* отключаем позиционирование */
+    justify-content: start;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 172px;
   }
 }
