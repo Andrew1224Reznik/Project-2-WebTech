@@ -875,3 +875,92 @@ body {
     font-size: 26px;
   }
 }
+
+/*-----------FEW-REASON------------*/
+
+.few-reason {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: 0 auto;
+  background: linear-gradient(
+      rgba(246, 246, 246, 0.9),
+      rgba(246, 246, 246, 0.9)
+    ),
+    url(../img/few-reason-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.few-reason-header {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.few-reason-line {
+  height: 92px;
+}
+
+.few-reason-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 115%;
+  letter-spacing: 0.03em;
+  color: #233142;
+}
+
+.span-few-reason {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 115%;
+  letter-spacing: 0.03em;
+  color: #377dff;
+}
+
+.few-reason-subtitle-01 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 91%;
+  letter-spacing: 0.02em;
+  color: #377dff;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.few-reason-subtitle {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 89%;
+  letter-spacing: 0.02em;
+  color: #657991;
+  padding-bottom: 20px;
+}
+
+.few-reason-text-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  color: #233142;
+  padding-bottom: 20px;
+}
+
+.few-reason-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: #5c6f87;
+  max-width: 567px;
+  padding-bottom: 30px;
+}
+
+.few-reason-last-text {
+  padding-bottom: 0;
+}
