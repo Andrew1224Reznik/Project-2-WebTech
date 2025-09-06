@@ -1316,6 +1316,7 @@ body {
 
 .innovation-buttons {
   display: flex;
+  justify-content: center;
 }
 
 .innovation-button-link {
@@ -1644,4 +1645,115 @@ body {
   .news-another {
     display: block;
   }
+}
+
+/*---------FOOTER------------*/
+
+.footer {
+  background: #141d28;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 70px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.footer-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 90%;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #377dff;
+  margin-bottom: 35px;
+}
+
+.about-us-text {
+  width: 370px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+}
+
+.recent-post-svg-text {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.recent-post-text-1 {
+  width: 270px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 200%;
+  color: #fff;
+}
+
+.recent-post-text-2 {
+  width: 270px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 200%;
+  color: #fff;
+  margin-left: 9px;
+}
+
+.footer-line {
+  width: 330px;
+  height: 1px;
+  background: #343d48;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.contact-us-svg-text {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.contact-us-text-1 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: #fff;
+}
+
+.contact-us-text-2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: #fff;
+  margin-left: 26px;
+  margin-bottom: 13px;
+}
+
+/*---------BACKDROP------------*/
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.3);
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
