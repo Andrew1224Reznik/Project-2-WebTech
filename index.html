@@ -19,6 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/smoothScroll.js" defer></script>
+    <script src="./js/testimonials.js" defer></script>
 
     <!-----------HEADER------------>
   </head>
@@ -53,7 +55,11 @@
               <a href="./blog.html" class="header-menu-link">Blog</a>
             </li>
             <li class="header-menu-item">
-              <a href="./contactus.html" class="header-menu-link">Contact Us</a>
+              <a
+                href="#footer-contact-us"
+                class="header-menu-link footer-link-contact-us"
+                >Contact Us</a
+              >
             </li>
           </ul>
           <button class="header-button">
@@ -62,65 +68,72 @@
             </svg>
           </button>
         </nav>
-          </div>     
-        
-      
-        <div class="mob-menu">
-          <div class="container mob-menu-container">
-            <div class="mob-menu-bar">
-        <button class="modal-close" type="button">
-          <svg class="icon-modal-close" width="20" height="20">
-            <use href="./img/symbol-defs.svg#icon-cross"></use>
-          </svg>
-        </button>
-        <nav class="mob-menu-nav">
-          <ul class="mob-menu-menu-list">
-            <li class="mob-menu-menu-item">
-              <a href="./about.html" class="mob-menu-menu-link current">Home</a>
-            </li>
-            <li class="mob-menu-menu-item">
-              <a href="./contact.html" class="mob-menu-menu-link">Pages</a>
-            </li>
-            <li class="mob-menu-menu-item">
-              <a href="./services.html" class="mob-menu-menu-link">Services</a>
-            </li>
-            <li class="mob-menu-menu-item">
-              <a href="./portfolio.html" class="mob-menu-menu-link">Portfolio</a>
-            </li>
-            <li class="mob-menu-menu-item">
-              <a href="./blog.html" class="mob-menu-menu-link">Blog</a>
-            </li>
-            <li class="mob-menu-menu-item">
-              <a href="./contactus.html" class="mob-menu-menu-link">Contact Us</a>
-            </li>
-          </ul>
-        </nav></div>
-      
-        <div class="mob-menu-soc-list">
-              <a href="#" class="mob-menu-soc-link"
-                ><svg class="mob-menu-soc-icon" width="40" height="40">
-                  <use href="./img/symbol-defs.svg#facebook"></use></svg
-              ></a>
-              <a href="#" class="mob-menu-soc-link"
-                ><svg class="workers-soc-icon" width="40" height="40">
-                  <use href="./img/symbol-defs.svg#telegram"></use></svg
-              ></a>
-              <a href="#" class="mob-menu-soc-link"
-                ><svg class="mob-menu-soc-icon" width="40" height="40">
-                  <use href="./img/symbol-defs.svg#linkedin"></use></svg
-              ></a>
-              <a href="#" class="mob-menu-soc-link"
-                ><svg class="workers-soc-icon" width="40" height="40">
-                  <use href="./img/symbol-defs.svg#instagram"></use></svg
-              ></a>
-              <a href="#" class="mob-menu-soc-link"
-                ><svg class="workers-soc-icon" width="40" height="40">
-                  <use href="./img/symbol-defs.svg#youtube"></use></svg
-              ></a>
-            </div>
+      </div>
+
+      <div class="mob-menu">
+        <div class="container mob-menu-container">
+          <div class="mob-menu-bar">
+            <button class="modal-close" type="button">
+              <svg class="icon-modal-close" width="20" height="20">
+                <use href="./img/symbol-defs.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <nav class="mob-menu-nav">
+              <ul class="mob-menu-menu-list">
+                <li class="mob-menu-menu-item">
+                  <a href="./about.html" class="mob-menu-menu-link current"
+                    >Home</a
+                  >
+                </li>
+                <li class="mob-menu-menu-item">
+                  <a href="./contact.html" class="mob-menu-menu-link">Pages</a>
+                </li>
+                <li class="mob-menu-menu-item">
+                  <a href="./services.html" class="mob-menu-menu-link"
+                    >Services</a
+                  >
+                </li>
+                <li class="mob-menu-menu-item">
+                  <a href="./portfolio.html" class="mob-menu-menu-link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-menu-menu-item">
+                  <a href="./blog.html" class="mob-menu-menu-link">Blog</a>
+                </li>
+                <li class="mob-menu-menu-item">
+                  <a href="#contact-us" class="mob-menu-menu-link"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
+
+          <div class="mob-menu-soc-list">
+            <a href="#" class="mob-menu-soc-link"
+              ><svg class="mob-menu-soc-icon" width="40" height="40">
+                <use href="./img/symbol-defs.svg#facebook"></use></svg
+            ></a>
+            <a href="#" class="mob-menu-soc-link"
+              ><svg class="workers-soc-icon" width="40" height="40">
+                <use href="./img/symbol-defs.svg#telegram"></use></svg
+            ></a>
+            <a href="#" class="mob-menu-soc-link"
+              ><svg class="mob-menu-soc-icon" width="40" height="40">
+                <use href="./img/symbol-defs.svg#linkedin"></use></svg
+            ></a>
+            <a href="#" class="mob-menu-soc-link"
+              ><svg class="workers-soc-icon" width="40" height="40">
+                <use href="./img/symbol-defs.svg#instagram"></use></svg
+            ></a>
+            <a href="#" class="mob-menu-soc-link"
+              ><svg class="workers-soc-icon" width="40" height="40">
+                <use href="./img/symbol-defs.svg#youtube"></use></svg
+            ></a>
           </div>
-      
+        </div>
+      </div>
     </header>
 
     <!-----------HERO------------>
@@ -155,11 +168,11 @@
           </div>
         </div>
       </section>
-      </main>
-
+    </main>
     <!-----------INFO------------>
 
-    <section class="info">
+    <main>
+      <section class="info">
         <div class="container">
           <div class="info-title-line">
             <div class="info-line"></div>
@@ -183,7 +196,7 @@
             </li>
 
             <li class="info-item">
-              <img class="info-img" src="./img/Rectangle-2.jpg" alt="icon2"/>
+              <img class="info-img" src="./img/Rectangle-2.jpg" alt="icon2" />
               <h3 class="info-text">Design</h3>
             </li>
 
@@ -209,9 +222,9 @@
         </div>
       </section>
 
-    <!-----------FEAUTERS------------>
+      <!-----------FEAUTERS------------>
 
-    <section class="features">
+      <section class="features">
         <div class="container">
           <ul class="features-list">
             <li class="features-item">
@@ -288,9 +301,9 @@
         </div>
       </section>
 
-    <!-----------WORKERS------------>
+      <!-----------WORKERS------------>
 
-    <section class="workers">
+      <section class="workers">
         <div class="container workers-all">
           <div class="workers-header-button">
             <div class="workers-header">
@@ -417,9 +430,9 @@
         </div>
       </section>
 
-    <!-----------FEW-REASON------------>
+      <!-----------FEW-REASON------------>
 
-    <section class="few-reason">
+      <section class="few-reason">
         <div class="container">
           <div class="few-reason-header">
             <div class="hero-line few-reason-line"></div>
@@ -452,50 +465,50 @@
         </div>
       </section>
 
-    <!-----------GALLERY------------>
+      <!-----------GALLERY------------>
 
-    <section class="gallery">
-      <div class="gallery-container">
-        <ul class="gallery-list">
-          <li class="gallery-item">
-            <img
-              class="gallery-img"
-              src="./img/gallery1.jpg"
-              alt="gallery1"
-              width=""
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              class="gallery-img"
-              src="./img/gallery2.jpg"
-              alt="gallery2"
-              width=""
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              class="gallery-img"
-              src="./img/gallery3.jpg"
-              alt="gallery3"
-              width=""
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              class="gallery-img"
-              src="./img/gallery4.jpg"
-              alt="gallery4"
-              width=""
-            />
-          </li>
-        </ul>
+      <section class="gallery">
+        <div class="gallery-container">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/gallery1.jpg"
+                alt="gallery1"
+                width=""
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/gallery2.jpg"
+                alt="gallery2"
+                width=""
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/gallery3.jpg"
+                alt="gallery3"
+                width=""
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                class="gallery-img"
+                src="./img/gallery4.jpg"
+                alt="gallery4"
+                width=""
+              />
+            </li>
+          </ul>
         </div>
       </section>
 
-    <!-----------OUR TESTIMONIALS------------->
+      <!-----------OUR TESTIMONIALS------------->
 
-    <section class="testimonials">
+      <section class="testimonials">
         <div class="container">
           <div class="testimonials-header">
             <div class="testimonials-line"></div>
@@ -563,12 +576,11 @@
             </div>
           </div>
         </div>
-        <script src="./js/command.js"></script>
       </section>
 
-    <!----------INNOVATION---------->
+      <!----------INNOVATION---------->
 
-    <section class="innovation">
+      <section class="innovation">
         <div class="container innovation-container">
           <img
             class="innovation-img"
@@ -591,9 +603,9 @@
         </div>
       </section>
 
-    <!---------OUR NEWS------------>
+      <!---------OUR NEWS------------>
 
-    <section class="our-news">
+      <section class="our-news">
         <div class="container">
           <div class="our-news-header">
             <div class="our-news-line"></div>
@@ -671,7 +683,7 @@
 
     <!---------FOOTER------------>
 
-  <footer class="footer">
+    <footer class="footer" id="footer-contact-us">
       <div class="container">
         <div class="footer-column">
           <div class="about-us">
@@ -781,7 +793,7 @@
 
     <!---------BACKDROP------------>
 
-  <div class="backdrop">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close" type="button">
           <svg class="icon-modal-close" width="20" height="20">
@@ -861,4 +873,3 @@
     </div>
   </body>
 </html>
-  
