@@ -33,3 +33,25 @@ function smoothScrollTo(target, duration = 600) {
 
   requestAnimationFrame(animation);
 }
+
+//обычный код (не для Safari)
+/*const contactLink = document.querySelector(".footer-link-contact-us");
+
+contactLink.addEventListener("click", (event) => {
+  event.preventDefault(); // останавливаем стандартный переход
+
+  const targetSelector = contactLink.getAttribute("href"); // "#footer-contact-us"
+  const section = document.querySelector(targetSelector);
+
+  if (section) {
+    seamless.scrollIntoView(section, {
+      behavior: "smooth",
+      block: "start",
+      inline: "center",
+    });
+  }
+});
+
+код работает при подключении библиоткеи Seamless 
+<script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest"></script>
+из источника https://www.npmjs.com/package/seamless-scroll-polyfill*/

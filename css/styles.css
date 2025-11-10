@@ -1795,7 +1795,7 @@ body {
 .backdrop-open {
   opacity: 1;
   visibility: visible;
-  pointer-events: auto;
+  pointer-events: all;
   transition: opacity 300ms ease;
 }
 
@@ -1913,4 +1913,10 @@ body {
 
 .modal-check:checked + .modal-check-text {
   fill: #377dff;
+}
+
+.noscroll {
+  /*класс для запрета прокрутки страницы при открытом модальном окне*/
+  overflow: hidden; /*запрет прокрутки страницы при открытом модальном окне*/
+  height: 100%; /*высота страницы при открытом модальном окне*/
 }
