@@ -10,3 +10,13 @@ mobMenuBtn.addEventListener("click", (event) => {
 closeMenu.addEventListener("click", (event) => {
   mobMenu.classList.remove("mob-menu-open");
 });
+
+// переход по ссылке Contact Us
+
+const contactUs = document.querySelector(".mob-menu-contact-us");
+
+console.log(contactUs);
+
+contactUs.addEventListener("click", (event) => {
+  mobMenu.classList.remove("mob-menu-open");
+});
