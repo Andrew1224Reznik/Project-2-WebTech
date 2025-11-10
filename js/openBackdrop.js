@@ -25,5 +25,3 @@ backdropWindow.addEventListener("click", (event) => {
     body.classList.remove("noscroll");
   }
 });
-
-console.log(closeModal); // что выводится?

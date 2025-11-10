@@ -114,15 +114,13 @@ body {
   z-index: 1;
   padding: 20px;
   opacity: 0;
-  pointer-events: 0;
-  visibility: hidden;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-/*накладывается на класс mob-menu*/
 .mob-menu-open {
   opacity: 1;
-  visibility: visible;
-  pointer-events: stroke;
+  transform: translateX(0);
 }
 
 .mob-menu-container {
@@ -130,15 +128,14 @@ body {
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+  padding-top: 30px;
 }
 
-.modal-close {
+.icon-menu-close {
   display: block;
   margin-left: auto;
   margin-right: 20px;
   margin-top: 5px;
-  background: none;
-  border: none;
   cursor: pointer;
   fill: #fff;
 }
