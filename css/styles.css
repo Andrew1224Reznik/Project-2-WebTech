@@ -1919,12 +1919,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .backdrop {
-    width: 100%;
-    height: 100%;
     background-color: rgba(17, 17, 17, 0.3);
-    position: fixed;
-    top: 0;
-    opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.5s ease, visibility 0.5s ease;
@@ -1941,10 +1936,7 @@ body {
     width: 500px;
     height: 540px;
     border-radius: 3%;
-    background-color: #f6f6f6;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    opacity: 0.9;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1955,105 +1947,21 @@ body {
   }
 
   .backdrop-close {
-    position: absolute;
     top: 30px;
-    right: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .modal-header {
-    margin-bottom: 25px;
-  }
-
-  .modal-input {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    color: #141d28;
-    border: 2px solid #377dff;
-    border-radius: 35px;
-    width: 100%;
-    height: 60px;
-    padding-left: 60px;
-    margin-bottom: 15px;
   }
 
   .modal-button {
-    display: inline-block;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    color: #141d28;
-    background-color: #fff;
-    padding: 17px 37px;
-    border: 2px solid #377dff;
-    border-radius: 35px;
-    transition: transform 500ms ease;
-    cursor: pointer;
-    margin-top: 12px;
-  }
-
-  .modal-button:hover {
-    background-color: #377dff;
-    color: #fff;
-    transform: scale(1.1);
+    margin: 12px 0px 32px 0px;
   }
 
   .modal-wrap {
     width: 100%;
-    position: relative;
     margin-left: 0;
-  }
-
-  .icon-modal {
-    position: absolute;
-    top: 20px;
-    left: 25px;
   }
 
   .modal-textarea {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    color: #141d28;
-    border: 2px solid #377dff;
-    border-radius: 35px;
     width: 100%;
-    height: 60px;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-right: 15px;
-    margin-bottom: 15px;
-    resize: none;
     margin-left: 0;
-  }
-
-  .modal-check-text {
-    margin-left: 10px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 155%;
-    text-align: center;
-    color: #4e5e72;
-    cursor: pointer;
-
-    a {
-      color: #377dff;
-    }
-  }
-
-  .modal-check-icon {
-    margin-right: 15px;
-  }
-
-  .modal-check:checked + .modal-check-text {
-    fill: #377dff;
   }
 
   .noscroll {
